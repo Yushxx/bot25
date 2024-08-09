@@ -146,7 +146,7 @@ bot.hears('Play to win 🎮', (ctx) => {
   const userId = ctx.message.from.id;
 
   // Le lien pour jouer, avec un code d'accès unique basé sur l'ID de l'utilisateur
-  const playLink = `http://t.me/GxGcashbot/tap?ref=${userId}`;
+  const playLink = `http://t.me/GxGcashbot/notcoin?ref=${userId}`;
 
   // Envoyer un message avec le code d'accès unique et un bouton inline "Play"
   ctx.reply(`Taper et gagner des pièces\n\nVotre code d'accès: ${userId}\n\nCliquez en bas pour commencer`, {
