@@ -127,7 +127,7 @@ bot.hears('Mon compte 👥', async (ctx) => {
 // Inviter
 bot.hears('Inviter🫂', (ctx) => {
   const userId = ctx.message.from.id;
-  ctx.reply(`Partager ce lien et gagnez 700 Fcfa à chaque invité:\nLien: t.me/GXG88bot?start=${userId}`);
+  ctx.reply(`Partager ce lien et gagnez 700 Fcfa à chaque invité:\nLien: t.me/GxGcashbot?start=${userId}`);
 });
 
 // Play to win 🎮
