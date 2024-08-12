@@ -1,19 +1,17 @@
 {
-  "name": "bot25",
+  "name": "telegram-bot",
   "version": "1.0.0",
-  "description": "Description de votre application",
-  "main": "bot.js",
-  
-  "dependencies": {
-    "node-telegram-bot-api": "^0.59.0",
-    "lodash": "^4.17.21",
-    "node-schedule": "^1.3.2"
-  
-
-  },
+  "description": "A Telegram bot to manage membership and play to win.",
+  "main": "index.js",
   "scripts": {
-    "start": "node bot.js"
+    "start": "node index.js"
   },
-  "author": "Votre Nom",
-  "license": "MIT"
+  "dependencies": {
+    "node-telegram-bot-api": "^0.58.0",
+    "axios": "^1.4.0",
+    "fs": "0.0.1-security",
+    "http": "0.0.1-security"
+  },
+  "author": "",
+  "license": "ISC"
 }
