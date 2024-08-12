@@ -1,7 +1,6 @@
 const TelegramBot = require('node-telegram-bot-api');
 const axios = require('axios');
 const fs = require('fs');
-const http = require('http');
 
 const token = '7282753875:AAEcih5wYDaniimZD_5lWt3qhn7ElhQvGl4';
 const bot = new TelegramBot(token, {polling: true});
@@ -135,8 +134,3 @@ bot.on('callback_query', (callbackQuery) => {
         bot.sendMessage(message.chat.id, 'Le minimum de retrait est 30.000F.');
     }
 });
-// Code keep_alive pour éviter que le bot ne s'endorme
-http.createServer(function (req, res) {
-    res.write("I'm alive");
-    res.end();
-}).listen(8080);
