@@ -123,7 +123,7 @@ bot.on('message', (msg) => {
     
     
     } else if (msg.text === 'Mon compte') {
-        bot.sendMessage(chatId, '🤴 votre profile \n 📍Solde actuel : 0 FCFA \n📍 Invitez et gagnez de encore  plus* \n🚫 *Le retrait est disponible à partir de 30.000 FCFA ! 🚀');
+        bot.sendMessage(chatId, '🤴 votre profile \n 📍Solde actuel : 0 FCFA \n📍 Invitez et gagnez de encore  plus \n🚫 *Le retrait est disponible à partir de 30.000 FCFA* ! 🚀');
   
     
     
