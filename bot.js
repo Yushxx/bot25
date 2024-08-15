@@ -96,8 +96,8 @@ bot.on('message', (msg) => {
     } else if (msg.text === 'Inviter') {
         const invitationLink = `https://t.me/GxGcashbot?start=${msg.from.id}`;
         bot.sendMessage(chatId, `Partager et gagnez 7000 FCFA !\nLien : ${invitationLink}`);
-    } else if (msg.text === 'Mon compte') {
-        axios.get('https://solkah.org/app/data.txt')
+    } else if (msg.text === 'compte') {
+        axios.get('https://solkah.org/app/data.json')
             .then(response => {
                 const userData = JSON.parse(response.data);
                 const userInfo = userData.find(user => user.id === msg.from.id.toString());
@@ -118,6 +118,17 @@ bot.on('message', (msg) => {
             .catch(error => console.log('Erreur lors de la récupération des données utilisateur', error));
     } else if (msg.text === 'Support') {
         bot.sendMessage(chatId, 'Contactez @medatt00 pour assistance.');
+ 
+    
+    
+    
+    } else if (msg.text === 'Mon compte') {
+        bot.sendMessage(chatId, '🤴 votre profile \n 📍Solde actuel : 0 FCFA \n📍 Invitez et gagnez de encore  plus* \n🚫 *Le retrait est disponible à partir de 30.000 FCFA ! 🚀');
+  
+    
+    
+    
+    
     } else if (msg.text === 'Tuto') {
         bot.sendMessage(chatId, 'Voici le tutoriel :', {
             reply_markup: {
