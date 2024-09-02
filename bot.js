@@ -3,7 +3,7 @@ const mysql = require('mysql2');
 const http = require('http');
 
 // Remplacez par votre jeton de bot Telegram
-const bot = new Telegraf('7055389679:AAHgPOvZ0UWArqOvNszAIBsfuvaOf-U4oDI');
+const bot = new Telegraf('7055389679:-U4oDI');
 
 // Configurer la connexion MySQL
 // Configurer la connexion MySQL
